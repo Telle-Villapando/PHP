@@ -1,0 +1,38 @@
+/* General SVG styling */
+.svg-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.25rem; /* Adjusts the width to match w-5 (1.25rem or 20px) */
+  height: 1.25rem; /* Adjusts the height to match h-5 (1.25rem or 20px) */
+  color: #6b7280; /* Text color for gray-500 */
+  transition: color 0.75s ease; /* Transition effect for color */
+  font-size: 1.5rem;
+}
+
+/* Dark mode adjustments */
+.dark .svg-icon {
+  color: #9ca3af; /* Text color for dark:text-gray-400 */
+}
+
+/* Hover state adjustments */
+.group:hover .svg-icon {
+  color: #1f2937; /* Text color for group-hover:text-gray-900 */
+}
+
+/* Dark mode hover state adjustments */
+.dark .group:hover .svg-icon {
+  color: #ffffff; /* Text color for dark:group-hover:text-white */
+}
+
+/* Flex properties */
+.svg-icon {
+  display: flex; /* Aligns items in a flex container */
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevents the SVG from shrinking */
+}
+.flex-ms-nowrap {
+  display: flex;
+  margin-inline-start: 1rem; /* ms-3 */
+  white-space: nowrap; /* whitespace-nowrap */
+}
